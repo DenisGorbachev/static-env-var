@@ -429,14 +429,14 @@ You are running in a sandbox with limited network access.
 
 ```toml
 [package]
-name = "rust-public-lib-template"
+name = "static-env-var"
 version = "0.1.0"
 edition = "2024"
 rust-version = "1.85.0"
-description = "A template for a public Rust library"
+description = ""
 license = "Apache-2.0 OR MIT"
-homepage = "https://github.com/DenisGorbachev/rust-public-lib-template"
-repository = "https://github.com/DenisGorbachev/rust-public-lib-template"
+homepage = "https://github.com/DenisGorbachev/static-env-var"
+repository = "https://github.com/DenisGorbachev/static-env-var"
 readme = "README.md"
 keywords = []
 categories = []
@@ -458,7 +458,7 @@ exclude = [
 ]
 
 [package.metadata.details]
-title = "A template for a public Rust library"
+title = ""
 tagline = ""
 summary = ""
 announcement = ""
