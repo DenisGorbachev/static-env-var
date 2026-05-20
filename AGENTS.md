@@ -467,12 +467,25 @@ readme = { generate = true }
 [dependencies]
 ```
 
+### fnox.toml
+
+```toml
+#:schema https://fnox.jdx.dev/schema.json
+
+if_missing = "error"
+
+[providers]
+keychain = { type = "keychain", service = "static-env-var" }
+pass = { type = "password-store", prefix = "static-env-var/" }
+```
+
 ### src/lib.rs
 
 ```rust
 //! This crate provides a [`static_env_var!`] macro for loading the environment variables statically in a `LazyLock`.
 
-#![deny(unused_crate_dependencies)]
+#![deny(clippy::arithmetic_side_effects)]
+#![cfg_attr(not(test), deny(unused_crate_dependencies))]
 
 #[macro_export]
 macro_rules! static_env_var {
