@@ -1,6 +1,5 @@
 //! This crate provides a [`static_env_var!`] macro for loading the environment variables statically in a `LazyLock`.
 
-#![deny(clippy::arithmetic_side_effects)]
 #![cfg_attr(not(test), deny(unused_crate_dependencies))]
 
 #[macro_export]

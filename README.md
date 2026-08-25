@@ -20,6 +20,10 @@ This crate provides a [`static_env_var!`] macro for loading the environment vari
 cargo add static-env-var
 ```
 
+## Other packages
+
+This workspace has no other packages.
+
 ## Gratitude
 
 Like the project? [⭐ Star this repo](https://github.com/DenisGorbachev/static-env-var) on GitHub!
