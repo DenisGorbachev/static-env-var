@@ -526,28 +526,13 @@ Examples:
 
 A package that has a remote whose name contains `public` or `pre-public` and ends with `template`.
 
-### Project info
-
-#### `git remote`
-
-```shell
-origin
-repoconf-rust-public-lib-template
-```
-
-### Project files
-
-#### Publishable package
-
-A package that has a remote whose name contains `public` or `pre-public` and ends with `template`.
-
 ## Project info
 
 ### `git remote`
 
 ```shell
 origin
-repoconf-rust-pre-public-lib-template
+repoconf-rust-public-lib-template
 ```
 
 ## Project files
@@ -812,7 +797,7 @@ workspace = true
 [dependencies]
 ```
 
-#### src/lib.rs
+### src/lib.rs
 
 ```rust
 //! This crate provides a [`static_env_var!`] macro for loading the environment variables statically in a `LazyLock`.
